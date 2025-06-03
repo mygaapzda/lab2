@@ -9,16 +9,16 @@ int main() {
 
     cin >> salario;
 
-    if (salario <= 400.00) {
+    if (salario <= 500.00) {
+        percentual = 20;
+    } else if (salario <= 1000.00) {
         percentual = 15;
-    } else if (salario <= 800.00) {
-        percentual = 12;
-    } else if (salario <= 1200.00) {
+    } else if (salario <= 1500.00) {
         percentual = 10;
     } else if (salario <= 2000.00) {
-        percentual = 7;
+        percentual = 5;
     } else {
-        percentual = 4;
+        percentual = 3;
     }
 
     reajuste = salario * percentual / 100.0;
